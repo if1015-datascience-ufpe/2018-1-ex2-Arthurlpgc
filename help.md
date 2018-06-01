@@ -6,3 +6,11 @@ O Texto informa que alguns dos investimentos crescentes em tecnologias no ramo p
 ## Resumo 2
 Texto: [How Vector Space Mathematics Reveals the Hidden Sexism in Language](https://www.technologyreview.com/s/602025/how-vector-space-mathematics-reveals-the-hidden-sexism-in-language/)
 
+Em 2013, alguns pesquisadores do google rodaram uma rede neural num corpus de 3e6 palavras tiradas do Google News. A motivação da pesquisa era buscar padrōes na frequencia em que palavras apareciam juntas. Essa rede neural gerou um espaço vetorial com aproximadamente 300 dimensões, onde as palavras com sentidos similares, aparecem em areas similares do espaço, e se consegue ver correlação entre palavras, da para inferir que tokyo esta para japāo, assim como paris esta para frança. Esse Dataset é conhecido como Word2Vec, e é bastante usado em traduçōes.
+
+Pesquisadores da universidade de Boston e da Microsoft Research descobriram que os dados do Word2Vec uma vez que refletem as opiniões da sociedade, são sexistas, e que coisas como pai esta para medico assim como mãe esta para enfermeira acontecem frequentemente.
+
+Sexismo é representado como uma deformaçao nesse espaço, e para consertar bastar aplicar a deformaçao contraria. No entanto, essa transformaçao deve preservar as relaçoes existentes como o exemplo da relaçao entre tokyo e japão. Eles tentaram usar uma tecnica chamada Hard Debiasing para tirar esse bias no espaço vetorial do Word2Vec. Para verificar, eles usaram de pessoas no Amazon Mecanical Turk, e para cada relaçao entre palavras, 10 pessoas verificavam, se mais da metade achasse sexista, eles consideravam que era sexista, e rodaram apos o debiasing, confirmando assim que significativamente menos relacoes eram sexistas.
+
+Mas isso gera a pergunta, se esse bias existe na sociedade, deviamos tirar o bias no texto? Isso causaria um espaco que não reflete a realidade da sociedade, que bem isso traria? e que mal? Essa duvida existe ja que para certas previsōes o debias atrapalharia, mas ao mesmo tempo esse bias pode influenciar as pessoas a ter ainda mais bias.
+
